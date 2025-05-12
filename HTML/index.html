@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TechStorm</title>
+  <link rel="stylesheet" href="../CSS/reset.css"/>
+  <link rel="stylesheet" href="../CSS/styles.css"/>
+  <script defer src="../JS/cart.js"></script>
+</head>
+
+<body>
+  <header class="header">
+    <div class="header-top">
+      <img src="../imagens/LOGO.png" alt="Logo" class="logo" />
+      <img src="../imagens/LOGO_NOME.png" alt="TechStorm" class="logo-name" />
+      <input type="search" class="search-bar" placeholder="Digite sua busca..." />
+      <button class="btn login-btn" onclick="window.location.href='login.html'">Login</button>
+      <img src="../imagens/icone carrinho.png" alt="Carrinho" class="cart-icon" id="cart-icon" />
+    </div>
+
+    <nav class="main-nav">
+      <ul class="menu">
+        <li class="menu-item">Monitores</li>
+        <li class="menu-item">Fones de ouvido</li>
+        <li class="menu-item">Teclados</li>
+        <li class="menu-item">Mouses</li>
+        <li class="menu-item">Acessórios</li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Sidebar Cart -->
+  <div id="cart-sidebar" class="cart-sidebar">
+    <div class="cart-header">
+      <h2>Carrinho de Compras</h2>
+      <button class="close-btn" id="close-cart-btn">×</button>
+    </div>
+    <div class="cart-content">
+      <p>Seu carrinho está vazio.</p>
+      <!-- Add cart items dynamically here -->
+    </div>
+  </div>
+
+  <main class="main-content">
+    <section class="banner">
+      <!-- Banner Description -->
+      <div class="banner-description">
+        <h1>Headset Knup One LED PC PS4 X</h1>
+        <h2>Alto desempenho em áudio gamer com tecnologia Wireless</h2>
+        <p>
+          Desenvolvido para proporcionar uma experiência de jogo de alto nível, é a escolha definitiva para quem busca alto
+          desempenho e conforto incomparáveis.
+        </p>
+        <p class="price">R$ 189,99</p>
+        <div class="action-buttons">
+          <button class="btn buy-btn">Comprar</button>
+          <button class="btn details-btn">Detalhes</button>
+        </div>
+      </div>
+
+      <!-- Banner Image -->
+      <div class="banner-image">
+        <img src="../imagens/pngwing.com (1) 1.png" alt="Headset Knup One" class="product-image" />
+      </div>
+    </section>
+
+    <section class="catalog">
+      <h1 class="catalog-title">Melhores ofertas para você</h1>
+      <ul class="product-list">
+        <li class="product-card">
+          <img src="../imagens/produtos/CADEIRA.png" alt="Cadeira Gamer" class="product-img" />
+          <h3 class="product-name">Cadeira Gamer</h3>
+          <p class="product-price">R$ 599,00</p>
+          <button class="btn buy-btn">Comprar</button>
+          <button class="btn details-btn">Detalhes</button>
+        </li>
+        <li class="product-card">
+          <img src="../imagens/produtos/CADEIRA.png" alt="Cadeira Gamer" class="product-img" />
+          <h3 class="product-name">Cadeira Gamer</h3>
+          <p class="product-price">R$ 599,00</p>
+          <button class="btn buy-btn">Comprar</button>
+          <button class="btn details-btn">Detalhes</button>
+        </li><li class="product-card">
+          <img src="../imagens/produtos/CADEIRA.png" alt="Cadeira Gamer" class="product-img" />
+          <h3 class="product-name">Cadeira Gamer</h3>
+          <p class="product-price">R$ 599,00</p>
+          <button class="btn buy-btn">Comprar</button>
+          <button class="btn details-btn">Detalhes</button>
+        </li><li class="product-card">
+          <img src="../imagens/produtos/CADEIRA.png" alt="Cadeira Gamer" class="product-img" />
+          <h3 class="product-name">Cadeira Gamer</h3>
+          <p class="product-price">R$ 599,00</p>
+          <button class="btn buy-btn">Comprar</button>
+          <button class="btn details-btn">Detalhes</button>
+        </li>      
+                </li><li class="product-card">
+          <img src="../imagens/produtos/CADEIRA.png" alt="Cadeira Gamer" class="product-img" />
+          <h3 class="product-name">Cadeira Gamer</h3>
+          <p class="product-price">R$ 599,00</p>
+          <button class="btn buy-btn">Comprar</button>
+          <button class="btn details-btn">Detalhes</button>
+        </li>   
+        <!-- Adicione os demais produtos com a mesma estrutura -->
+      </ul>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <ul class="footer-titles">
+      <li>Institucional</li>
+      <li>Ajuda</li>
+      <li>Contatos</li>
+    </ul>
+    <div class="footer-content">
+      <ul>
+        <li>Sobre nós</li>
+        <li>Fale Conosco</li>
+        <li>Políticas de envio</li>
+        <li>Política de privacidade</li>
+      </ul>
+      <ul>
+        <li>Como comprar</li>
+        <li>Minha conta</li>
+        <li>Meus pedidos</li>
+        <li>Meus endereços</li>
+      </ul>
+      <ul>
+        <li>contato@techstorm.com</li>
+        <li>(11) 91234-5678</li>
+      </ul>
+    </div>
+  </footer>
+</body>
+
+</html>
