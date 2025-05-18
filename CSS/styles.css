@@ -1,4 +1,4 @@
-/* Estilos Base */
+
 html, body {
   height: 100%;
   margin: 0;
@@ -11,7 +11,7 @@ body {
   color: #ffffff;
 }
 
-/* Header */
+
 .header {
   width: 100%;
   background-color: #0e151b;
@@ -22,28 +22,22 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 15px 5%;
   background-color: #0e151b;
+  margin-top: 15px;
 }
 
 .logo-container {
   display: flex;
   align-items: center;
-  gap: 10px; /* Adds spacing between the logo and logo name */
-}
-
-.logo {
-  width: 100px;
-  cursor: pointer;
+  gap: 10px; 
 }
 
 .logo-name {
-  width: 200px;
+  width: 350px;
   cursor: pointer;
 }
-
 .search-container {
-  flex: 1; /* Makes the search bar take up available space */
+  flex: 1; 
   display: flex;
   align-items: center;
   justify-content: center;
@@ -51,24 +45,25 @@ body {
 }
 
 .search-bar {
-  width: 100%;
-  max-width: 400px; /* Limits the search bar width */
-  padding: 10px;
+  width: 50%;
+  height: 40px;
+  padding-left: 15px;
   border: 1px solid #415467;
   border-radius: 5px;
   background-color: #0e151b;
   color: white;
+  font-family: 'Lexend';
 }
 
 .search-bar::placeholder {
-  color: #9c9c9c; /* Placeholder text color */
+  color: #9c9c9c; 
 }
 
 .action-buttons {
   display: flex;
-  justify-content: center; /* Centers the buttons horizontally */
-  gap: 15px; /* Adds spacing between the buttons */
-  margin-top: 20px; /* Adds spacing above the buttons */
+  justify-content: center; 
+  gap: 15px; 
+  margin-top: 20px; 
 }
 
 .login-btn {
@@ -79,6 +74,8 @@ body {
   border-radius: 20px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  font-family: 'Lexend';
+  margin-left: 30px;
 }
 
 .login-btn:hover {
@@ -89,96 +86,110 @@ body {
   width: 32px;
   cursor: pointer;
   transition: transform 0.3s ease;
+  margin-right: 40px;
 }
 
 .cart-icon:hover {
-  transform: scale(1.1); /* Slight zoom effect on hover */
+  transform: scale(1.1); 
 }
 
-/* Menu */
+
 .main-nav {
-  background-color: #0e151b; /* Matches the header background */
-  width: 100%; /* Ensures the menu spans the full width of the screen */
-  border-top: 2px solid #5BFEFE; /* Adds a top border */
-  border-bottom: 2px solid #5BFEFE; /* Adds a bottom border */
+  background-color: #0e151b; 
+  width: 100%; 
 }
 
 .menu {
   display: flex;
-  justify-content: space-evenly; /* Distributes menu items equally */
+  justify-content: space-evenly; 
   align-items: center;
   list-style: none;
   margin: 0;
-  padding: 10px 0;
+  margin-top: 15px;
 }
 
 .menu-item {
-  flex: 1; /* Ensures each menu item takes up equal space */
+  flex: 1; 
   text-align: center;
   padding: 10px 0;
   font-weight: bold;
-  background-color: #ffffff; /* Sets the background to white */
-  color: #0e151b; /* Sets the text color to match the header background */
-  border-right: 1px solid #5BFEFE; /* Adds a border between menu items */
+  background-color: #ffffff; 
+  color: #0e151b; 
+  border-right: 1px solid #5BFEFE; 
   transition: background-color 0.3s, color 0.3s;
+  height: 25px;
+  padding-top: 15px;
+  font-family: 'Lexend';
+  font-size: 15px;
 }
 
 .menu-item:last-child {
-  border-right: none; /* Removes the border from the last item */
+  border-right: none; 
 }
 
 .menu-item:hover {
-  background-color: #5BFEFE; /* Highlight effect on hover */
-  color: #ffffff; /* Changes text color on hover */
+  background-color: #0e1731; 
+  color: #ffffff;
   cursor: pointer;
+  
 }
 
-/* Main */
+
 .main-content {
-  margin-top: 40px;
   padding: 20px;
 }
 
-/* Banner Section */
+.main-content2{
+  margin-top: 100px;
+
+}
+
+
 .banner {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  padding: 40px 5%;
-  background: linear-gradient(135deg, #0e151b, #415467); /* Adds a gradient background */
-  border-radius: 10px; /* Adds rounded corners */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Adds a subtle shadow */
-  gap: 30px; /* Adds space between the text and the image */
+  padding: 60px 5%;
+  background: linear-gradient(135deg, #0e151b, #26323e); 
+  border-radius: 10px; 
+  gap: 30px; 
 }
 
 .banner-description {
   max-width: 500px;
   color: #ffffff;
-  text-align: center; /* Centers the text horizontally */
-  margin: 0 auto; /* Centers the description block within the section */
+  text-align: center; 
+  margin: 0 auto; 
+  padding-left: 50px;
+
 }
 
 .banner-description h1 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   margin-bottom: 15px;
-  color: #5BFEFE; /* Highlighted color for the title */
+  color: #faffff;
+  font-family: 'Lexend'; 
+  font-weight: bold;
 }
 
 .banner-description h2 {
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   margin-bottom: 15px;
-  color: #ffffff;
+  color: #606060;
 }
 
 .banner-description p {
-  font-size: 1rem;
+  font-size: 0.8rem;
   margin-bottom: 15px;
   line-height: 1.6;
+  font-family: 'Lexend';
+
+  
 }
 
 .banner-description .price {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   font-weight: bold;
   color: #5BFEFE;
   margin-bottom: 20px;
@@ -196,21 +207,37 @@ body {
 .buy-btn {
   background-color: #5BFEFE;
   color: #0e151b;
+  border-radius: 20px;
+  width: 140px;
+  height: 50px;
+  font-family: 'Lexend';
+  letter-spacing: 3px;
+  font-size: 15px;
+
 }
 
 .buy-btn:hover {
-  background-color: #4adede;
-  transform: scale(1.05); /* Slight zoom effect */
+  background-color: #022d2d;
+  transform: scale(1.05); 
+  color: #ffffff;
 }
 
 .details-btn {
-  background-color: #9c9c9c;
-  color: #0e151b;
+  background-color: #5b5a5a;
+  color: #ffffff;
+  width: 140px;
+  height: 50px;
+  font-family: 'Lexend'; 
+  letter-spacing: 3px;
+  font-size: 15px;
+
+
 }
 
 .details-btn:hover {
-  background-color: #7a7a7a;
-  transform: scale(1.05); /* Slight zoom effect */
+  background-color: #181818;
+  transform: scale(1.05); 
+  color: #4adede;
 }
 
 .banner-image {
@@ -221,14 +248,13 @@ body {
 }
 
 .banner-image .product-image {
-  max-width: 100%;
+  max-width: 70%;
   height: auto;
-  object-fit: contain;
-  border-radius: 10px; /* Adds rounded corners to the image */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Adds a subtle shadow */
+  margin-left: 30px;
+
 }
 
-/* Carousel Section */
+
 .carousel-section {
   margin-top: 40px;
   padding: 20px 5%;
@@ -246,7 +272,7 @@ body {
   position: relative;
   overflow: hidden;
   width: 100%;
-  padding: 0 40px; /* para espaço dos botões laterais */
+  padding: 0 40px; 
 }
 
 .carousel {
@@ -316,11 +342,37 @@ body {
   padding: 40px 0;
 }
 
-.catalog-title {
+.catalog-title  {
   text-align: center;
-  font-size: 2.5rem;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
+  font-family: 'Lexend';
+  letter-spacing: 6px;
+  padding: 20px;
 }
+
+.catalog-title h1{
+  color: white;
+  font-weight: 900;
+  font-size: 2rem;
+
+  text-transform: uppercase;
+  text-shadow: 0 3px 3px rgba(0, 0, 0, 0.3), 0 10px 5px rgba(0, 0, 0, 0.2); 
+  position: relative;
+}
+
+.catalog-title h1::after {
+  content: "MELHORES OFERTAS PARA VOCÊ";
+  position: absolute;
+  top: 45%;
+  left: 5px;
+  width: 100%;
+  color: rgba(255, 255, 255, 0.2);
+  line-height: 1;
+  text-shadow: none;
+  pointer-events: none;
+  opacity: 0.5;
+}
+
 
 .product-list {
   display: flex;
@@ -357,59 +409,63 @@ body {
 .product-price {
   color: #555;
   margin-bottom: 10px;
+ 
 }
 
-/* Footer */
 .footer {
   background-color: #0e151b;
   color: #fff;
-  padding: 40px 5%;
+  padding: 60px 10% 20px 5%;
+  font-family: 'Lexend', sans-serif;
+
 }
 
-.footer-titles {
+
+.footer-columns {
   display: flex;
-  justify-content: space-around;
-  font-weight: bold;
-  margin-bottom: 20px;
-  list-style: none;
-}
-
-.footer-titles li {
- width: 180px;
-  text-align: center;
-  cursor: pointer;
-  transition: color 0.3s;
-}
-
-.footer-content {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-
-.footer-content ul {
   justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.footer-columns ul {
   list-style: none;
   padding: 0;
+  margin: 0 15px;
+  min-width: 200px;
 }
 
-.footer-content ul li {
-  width: 180px;
-  padding: 5px 0;
+.footer-title {
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.footer-columns ul li {
+  padding: 6px 0;
   cursor: pointer;
   transition: color 0.3s;
-  text-align: center;
+  font-size: 14px;
 }
 
-.footer-content ul li:hover {
+.footer-columns ul li:hover {
   color: #5BFEFE;
 }
 
-/* Sidebar Cart */
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid #333;
+  padding-top: 40px;
+  margin-bottom: 20px;
+  font-size: 13px;
+  color: #ccc;
+}
+
 .cart-sidebar {
   position: fixed;
   top: 0;
-  right: -100%; /* Initially hidden */
+  right: -100%; 
   width: 300px;
   height: 100%;
   background-color: #0e151b;
@@ -452,35 +508,35 @@ body {
   color: #9c9c9c;
 }
 
-/* Show the sidebar */
+
 .cart-sidebar.active {
   right: 0;
 }
 
-/* Login Section */
+
 .login-section {
-  height: 100vh; /* Full height of the viewport */
+  height: 100vh; 
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #0e151b;
-  margin: 0; /* Remove any default margin */
-  padding: 0; /* Remove any default padding */
+  margin: 0; 
+  padding: 0;
 }
 
 .login-box {
   background-color: #ffffff;
   color: #0e151b;
-  padding: 20px; /* Reduced padding inside the box */
+  padding: 20px; 
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   text-align: center;
   width: 100%;
   max-width: 400px;
-  margin: 10px 0; /* Add a small margin above and below the box */
+  margin: 10px 0; 
 }
 
-/* Styles specific to login.html */
+
 .login-page {
   height: 100%;
 }
@@ -491,14 +547,14 @@ body {
   justify-content: center;
   align-items: center;
   background-color: #0e151b;
-  margin: 0; /* Remove any default margin */
-  padding: 0; /* Remove any default padding */
+  margin: 0; 
+  padding: 0; 
 }
 
 .login-page .login-box {
   background-color: #ffffff;
   color: #0e151b;
-  padding: 20px; /* Reduced padding */
+  padding: 20px; 
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   text-align: center;
@@ -507,8 +563,8 @@ body {
 }
 
 .login-page .login-title {
-  font-size: 1.8rem; /* Slightly smaller font size */
-  margin-bottom: 15px; /* Reduced margin */
+  font-size: 1.8rem; 
+  margin-bottom: 15px; 
   color: #5BFEFE;
 }
 
@@ -549,11 +605,12 @@ body {
   color: #4adede;
 }
 
-.login-page .btn.login-btn {
-  padding: 8px 15px; /* Reduced padding for the button */
-  font-size: 1rem; /* Slightly smaller font size */
-  margin-top: 15px; /* Reduced margin above the button */
+.login-page  {
+  padding: 8px 15px; 
+  font-size: 1rem; 
+  margin-top: 15px; 
 }
+
 
 /* Styles specific to createuser.html */
 .createuser-page {
@@ -574,11 +631,11 @@ body {
   background-color: #ffffff;
   color: #0e151b;
   padding: 40px;
-  border-radius: 20px; /* Rounded corners */
+  border-radius: 20px; 
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   text-align: center;
   width: 100%;
-  max-width: 600px; /* Wider box for two-column layout */
+  max-width: 600px; 
   position: relative;
 }
 
@@ -719,6 +776,7 @@ body {
   font-weight: bold;
   color: #5BFEFE;
   margin-bottom: 20px;
+  letter-spacing: 3px;
 }
 
 .actions {
@@ -759,3 +817,101 @@ body {
   font-size: 1.2rem;
   font-weight: bold;
 }
+
+
+
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; 
+  gap: 20px;
+  padding: 30px;
+  max-width: 1190px; 
+  margin: 0 auto;
+  font-family: 'Lexend';
+}
+
+    .card {
+      background-color: #fff;
+      color: #000;
+      width: 190px;
+      border-radius: 6px;
+      overflow: hidden;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      transition: all 0.3s ease;
+      cursor: pointer;
+      margin-left: 30px;
+      margin-top: 30px;
+      border: none;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+    }
+
+    .card img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .card p {
+      
+      font-size: 10px;
+      font-weight: bold;
+      padding: 8px;
+    }
+
+    .card .preco {
+      font-size: 15px;
+      font-weight: bold;
+      color: #054e78;
+      letter-spacing: 2px;
+      margin-bottom: 10px;
+    }
+
+    .card-buttons {
+      display: flex;
+      
+      border: none; 
+      
+    }
+
+    .card-buttons button {
+      flex: 1;
+      padding: 10px 0;
+      font-weight: bold;
+      font-size: 9px;
+      border: none;
+      cursor: pointer;
+      text-transform: uppercase;
+      transition: background-color 0.3s ease;
+      letter-spacing: 3px;
+      border: none; 
+      font-family: 'Lexend';
+    }
+
+
+    .btn-detalhes {
+      background-color: #0d1117;
+      color: white;
+    }
+
+    .btn-comprar {
+      background-color: #3CF6F6;
+      color: black;
+    }
+
+    .btn-detalhes:hover {
+      background-color: #181818;
+      color: #3CF6F6;
+    }
+
+    .btn-comprar:hover {
+      background-color: #022d2d;
+      color: #fff;
+    }
