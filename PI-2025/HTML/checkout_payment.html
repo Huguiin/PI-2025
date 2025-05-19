@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Checkout - Pagamento</title>
+  <link rel="stylesheet" href="../CSS/reset.css" />
+  <link rel="stylesheet" href="../CSS/checkout.css" />
+</head>
+
+<body>
+  <header>
+    <img src="../imagens/LOGO_NOME.png" alt="TechStorm Logo" class="logo" />
+  </header>
+
+  <main class="checkout">
+    <section class="checkout-info">
+      <div class="steps">
+        <span class="step">Endereço</span>
+        <span class="step active">Pagamento</span>
+        <span class="step">Confirmação</span>
+      </div>
+
+      <section class="form-section">
+        <h2>Método de pagamento</h2>
+        <form>
+          <div class="payment-method">
+            <label>
+              <input type="radio" name="payment" value="pix" />
+              Pix
+            </label>
+            <label>
+              <input type="radio" name="payment" value="boleto" />
+              Boleto
+            </label>
+            <label>
+              <input type="radio" name="payment" value="credit-card" checked />
+              Cartão de Crédito
+            </label>
+          </div>
+
+          <div class="form-group">
+            <input type="text" placeholder="Número do cartão" />
+            <input type="text" placeholder="Nome do titular" />
+          </div>
+          <input type="text" placeholder="CPF do titular" />
+          <div class="form-group">
+            <input type="text" placeholder="CVV" />
+            <input type="text" placeholder="Validade (MM/AA)" />
+          </div>
+          <div class="checkbox">
+            <input type="checkbox" id="save-card" />
+            <label for="save-card">Salvar cartão</label>
+          </div>
+          <button type="submit" class="confirm-btn">CONFIRMAR CARTÃO</button>
+        </form>
+      </section>
+    </section>
+
+    <section class="cart-summary">
+      <div class="cart-item">
+        <div class="image-placeholder"></div>
+        <div>
+          <h3>Mouse Gamer Anúbis</h3>
+          <p>Cor: 1<br>Quantidade: 1</p>
+          <p class="price">R$114,99</p>
+        </div>
+        <button class="remove-btn">Remover</button>
+      </div>
+
+      <div class="cart-item">
+        <div class="image-placeholder"></div>
+        <div>
+          <h3>Mouse Gamer Anúbis</h3>
+          <p>Cor: 2<br>Quantidade: 1</p>
+          <p class="price">R$114,99</p>
+        </div>
+        <button class="remove-btn">Remover</button>
+      </div>
+
+      <input type="text" placeholder="Adicionar código de cupom" class="coupon" />
+
+      <div class="summary">
+        <p>Subtotal <span>R$229,98</span></p>
+        <p>Frete <span>R$19,99</span></p>
+        <p class="total">Total <span>R$249,97</span></p>
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>
