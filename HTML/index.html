@@ -7,6 +7,8 @@
   <title>TechStorm</title>
   <link rel="stylesheet" href="../CSS/reset.css"/>
   <link rel="stylesheet" href="../CSS/styles.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
   <script defer src="../JS/cart.js"></script>
 </head>
 
@@ -16,25 +18,37 @@
 </style>
 
 <body>
-  <header class="header">
-    <div class="header-top">
-      <img src="../imagens/icone techstorm.png" alt="TechStorm" class="logo-name" />
-      <input type="search" class="search-bar" placeholder="Digite sua busca..." />
-      <button class="btn login-btn" onclick="window.location.href='login.html'">Login</button>
-      <img src="../imagens/icone carrinho.png" alt="Carrinho" class="cart-icon" id="cart-icon" />
-    </div>
+  <header class="main-header">
+    <div class="header-container">
+      <div class="logo-container">
+        <img src="../imagens/image 1.png" alt="TECHSTORM Logo" class="logo">
+      </div>
 
-    <nav class="main-nav">
-      <ul class="menu">
-        <li class="menu-item">Monitores</li>
-        <li class="menu-item">Fones de ouvido</li>
-        <li class="menu-item">Teclados</li>
-        <li class="menu-item">Mouses</li>
-        <li class="menu-item">Acessórios</li>
-      </ul>
-    </nav>
+      <div class="buscar-container" >
+        <input type="text" placeholder="Pesquisar produtos" class="busca-bar">
+        <button class="busca-btn">
+          <i class="fas fa-search" ></i>
+        </button>
+      </div>
+
+      <div class="icons-container">
+        <button class="carrinho-btn" class="cart-icon" id="cart-icon">
+          <i class="fas fa-shopping-cart"></i>
+        </button>
+        <button class="login-btn" ><a href="../HTML/login.html">LOGIN</a></button>
+      </div>
+    </div>
   </header>
-   
+
+  <nav class="main-nav">
+    <ul class="menu">
+      <li class="menu-item">Monitores</li>
+      <li class="menu-item">Fones de ouvido</li>
+      <li class="menu-item">Teclados</li>
+      <li class="menu-item">Mouses</li>
+      <li class="menu-item">Acessórios</li>
+    </ul>
+  </nav>  
   <div id="cart-sidebar" class="cart-sidebar">
     <div class="cart-header">
       <h2>Carrinho de Compras</h2>
