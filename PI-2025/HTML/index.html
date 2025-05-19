@@ -10,15 +10,11 @@
   <script defer src="../JS/cart.js"></script>
 </head>
 
-<style>
-  @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
-  @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend:wght@100..900&display=swap');
-</style>
-
 <body>
   <header class="header">
     <div class="header-top">
-      <img src="../imagens/icone techstorm.png" alt="TechStorm" class="logo-name" />
+      <img src="../imagens/LOGO.png" alt="Logo" class="logo" />
+      <img src="../imagens/LOGO_NOME.png" alt="TechStorm" class="logo-name" />
       <input type="search" class="search-bar" placeholder="Digite sua busca..." />
       <button class="btn login-btn" onclick="window.location.href='login.html'">Login</button>
       <img src="../imagens/icone carrinho.png" alt="Carrinho" class="cart-icon" id="cart-icon" />
@@ -34,7 +30,8 @@
       </ul>
     </nav>
   </header>
-   
+
+  <!-- Sidebar Cart -->
   <div id="cart-sidebar" class="cart-sidebar">
     <div class="cart-header">
       <h2>Carrinho de Compras</h2>
@@ -42,15 +39,15 @@
     </div>
     <div class="cart-content">
       <p>Seu carrinho está vazio.</p>
-
+      <!-- Add cart items dynamically here -->
     </div>
   </div>
 
   <main class="main-content">
     <section class="banner">
-
+      <!-- Banner Description -->
       <div class="banner-description">
-        <h1>HEADSET KNUP ONE LED PC PS4 X</h1>
+        <h1>Headset Knup One LED PC PS4 X</h1>
         <h2>Alto desempenho em áudio gamer com tecnologia Wireless</h2>
         <p>
           Desenvolvido para proporcionar uma experiência de jogo de alto nível, é a escolha definitiva para quem busca alto
@@ -58,232 +55,83 @@
         </p>
         <p class="price">R$ 189,99</p>
         <div class="action-buttons">
-          <button class="btn buy-btn">COMPRAR</button>
-          <button class="btn details-btn">DETALHES</button>
+          <button class="btn buy-btn">Comprar</button>
+          <button class="btn details-btn">Detalhes</button>
         </div>
       </div>
 
-    
+      <!-- Banner Image -->
       <div class="banner-image">
-        <img src="../imagens/Headset.png" alt="Headset Knup One" class="product-image" />
+        <img src="../imagens/pngwing.com (1) 1.png" alt="Headset Knup One" class="product-image" />
       </div>
     </section>
+
     <section class="catalog">
-      <div class="catalog-title">
-        <h1> MELHORES OFERTAS PARA VOCÊ </h1>
-      </div>
-
-      <div class="container">
-       
-        <div class="card">
-          <img src="../imagens/produtos/CADEIRA.png" alt="Mouse Gamer">
-          <p><strong>Mouse Gamer Anúbis 7 Botões LED RBG</strong></p>
-          <p class="preco">R$114,99</p>
-          <div class="card-buttons">
-            <button class="btn-detalhes">Detalhes</button>
-            <button class="btn-comprar">Comprar</button>
-          </div>
-        </div>
-    
-        <div class="card">
-          <img src="../imagens/produtos/MOUSE.png" alt="Computador Gamer">
-          <p><strong>Computador Gamer Mancer Amd Ryzen 5</strong></p>
-          <p class="preco">R$3.299,99</p>
-          <div class="card-buttons">
-            <button class="btn-detalhes">Detalhes</button>
-            <button class="btn-comprar">Comprar</button>
-            
-          </div>
-        </div>
-    
-        <div class="card">
-          <img src="../imagens/produtos/MONITOR.png" alt="Computador Gamer">
-          <p><strong>Computador Gamer Mancer Amd Ryzen 5</strong></p>
-          <p class="preco">R$3.299,99</p>
-          <div class="card-buttons">
-            <button class="btn-detalhes">Detalhes</button>
-            <button class="btn-comprar">Comprar</button>
-
-          </div>
-        </div>
-
-        <div class="card">
-          <img src="../imagens/produtos/CADEIRA.png" alt="Computador Gamer">
-          <p><strong>Computador Gamer Mancer Amd Ryzen 5</strong></p>
-          <p class="preco">R$3.299,99</p>
-          <div class="card-buttons">
-            <button class="btn-detalhes">Detalhes</button>
-            <button class="btn-comprar">Comprar</button>
-
-          </div>
-        </div>
-
-        <div class="card">
-          <img src="../imagens/produtos/KEYCAP.png" alt="Computador Gamer">
-          <p><strong>Computador Gamer Mancer Amd Ryzen 5</strong></p>
-          <p class="preco">R$3.299,99</p>
-          <div class="card-buttons">
-            <button class="btn-detalhes">Detalhes</button>
-            <button class="btn-comprar">Comprar</button>
-
-          </div>
-        </div>
-
-        <div class="card">
-          <img src="../imagens/produtos/PLACA DE VIDEO.png" alt="Computador Gamer">
-          <p><strong>Computador Gamer Mancer Amd Ryzen 5</strong></p>
-          <p class="preco">R$3.299,99</p>
-          <div class="card-buttons">
-            <button class="btn-detalhes">Detalhes</button>
-            <button class="btn-comprar">Comprar</button>
-
-          </div>
-        </div>
-
-        <div class="card">
-          <img src="../imagens/produtos/SUP PLACA DE VIDEO.png" alt="Computador Gamer">
-          <p><strong>Computador Gamer Mancer Amd Ryzen 5</strong></p>
-          <p class="preco">R$3.299,99</p>
-          <div class="card-buttons">
-            <button class="btn-detalhes">Detalhes</button>
-            <button class="btn-comprar">Comprar</button>
-
-          </div>
-        </div>
-
-
-        <div class="card">
-          <img src="../imagens/produtos/SUPORTE.png" alt="Computador Gamer">
-          <p><strong>Computador Gamer Mancer Amd Ryzen 5</strong></p>
-          <p class="preco">R$3.299,99</p>
-          <div class="card-buttons">
-            <button class="btn-detalhes">Detalhes</button>
-            <button class="btn-comprar">Comprar</button>
-
-          </div>
-        </div>
-
-        <div class="card">
-          <img src="../imagens/produtos/WEBCAM.png" alt="Computador Gamer">
-          <p><strong>Computador Gamer Mancer Amd Ryzen 5</strong></p>
-          <p class="preco">R$3.299,99</p>
-          <div class="card-buttons">
-            <button class="btn-detalhes">Detalhes</button>
-            <button class="btn-comprar">Comprar</button>
-
-          </div>
-        </div>
-
-        <div class="card">
-          <img src="../imagens/produtos/GABINETE.png" alt="Computador Gamer">
-          <p><strong>Computador Gamer Mancer Amd Ryzen 5</strong></p>
-          <p class="preco">R$3.299,99</p>
-          <div class="card-buttons">
-            <button class="btn-detalhes">Detalhes</button>
-            <button class="btn-comprar">Comprar</button>
-
-          </div>
-        </div>
-
-
-        <div class="card">
-          <img src="../imagens/produtos/SUP PLACA DE VIDEO.png" alt="Computador Gamer">
-          <p><strong>Computador Gamer Mancer Amd Ryzen 5</strong></p>
-          <p class="preco">R$3.299,99</p>
-          <div class="card-buttons">
-            <button class="btn-detalhes">Detalhes</button>
-            <button class="btn-comprar">Comprar</button>
-
-          </div>
-        </div>
-
-        <div class="card">
-          <img src="../imagens/produtos/MOUSE.png" alt="Computador Gamer">
-          <p><strong>Computador Gamer Mancer Amd Ryzen 5</strong></p>
-          <p class="preco">R$3.299,99</p>
-          <div class="card-buttons">
-            <button class="btn-detalhes">Detalhes</button>
-            <button class="btn-comprar">Comprar</button>
-
-          </div>
-        </div>
-
-
-        <div class="card">
-          <img src="../imagens/produtos/PLACA DE VIDEO.png" alt="Computador Gamer">
-          <p><strong>Computador Gamer Mancer Amd Ryzen 5</strong></p>
-          <p class="preco">R$3.299,99</p>
-          <div class="card-buttons">
-            <button class="btn-detalhes">Detalhes</button>
-            <button class="btn-comprar">Comprar</button>
-
-          </div>
-        </div>
-
-
-        <div class="card">
-          <img src="../imagens/produtos/SUP PLACA DE VIDEO.png" alt="Computador Gamer">
-          <p><strong>Computador Gamer Mancer Amd Ryzen 5</strong></p>
-          <p class="preco">R$3.299,99</p>
-          <div class="card-buttons">
-            <button class="btn-detalhes">Detalhes</button>
-            <button class="btn-comprar">Comprar</button>
-
-          </div>
-        </div>
-
-
-        <div class="card">
-          <img src="../imagens/produtos/SUPORTE.png" alt="Computador Gamer">
-          <p><strong>Computador Gamer Mancer Amd Ryzen 5</strong></p>
-          <p class="preco">R$3.299,99</p>
-          <div class="card-buttons">
-            <button class="btn-detalhes">Detalhes</button>
-            <button class="btn-comprar">Comprar</button>
-
-          </div>
-        </div>
-      </div>
-
+      <h1 class="catalog-title">Melhores ofertas para você</h1>
+      <ul class="product-list">
+        <li class="product-card">
+          <img src="../imagens/produtos/CADEIRA.png" alt="Cadeira Gamer" class="product-img" />
+          <h3 class="product-name">Cadeira Gamer</h3>
+          <p class="product-price">R$ 599,00</p>
+          <button class="btn buy-btn">Comprar</button>
+          <button class="btn details-btn">Detalhes</button>
+        </li>
+        <li class="product-card">
+          <img src="../imagens/produtos/CADEIRA.png" alt="Cadeira Gamer" class="product-img" />
+          <h3 class="product-name">Cadeira Gamer</h3>
+          <p class="product-price">R$ 599,00</p>
+          <button class="btn buy-btn">Comprar</button>
+          <button class="btn details-btn">Detalhes</button>
+        </li><li class="product-card">
+          <img src="../imagens/produtos/CADEIRA.png" alt="Cadeira Gamer" class="product-img" />
+          <h3 class="product-name">Cadeira Gamer</h3>
+          <p class="product-price">R$ 599,00</p>
+          <button class="btn buy-btn">Comprar</button>
+          <button class="btn details-btn">Detalhes</button>
+        </li><li class="product-card">
+          <img src="../imagens/produtos/CADEIRA.png" alt="Cadeira Gamer" class="product-img" />
+          <h3 class="product-name">Cadeira Gamer</h3>
+          <p class="product-price">R$ 599,00</p>
+          <button class="btn buy-btn">Comprar</button>
+          <button class="btn details-btn">Detalhes</button>
+        </li>      
+                </li><li class="product-card">
+          <img src="../imagens/produtos/CADEIRA.png" alt="Cadeira Gamer" class="product-img" />
+          <h3 class="product-name">Cadeira Gamer</h3>
+          <p class="product-price">R$ 599,00</p>
+          <button class="btn buy-btn">Comprar</button>
+          <button class="btn details-btn">Detalhes</button>
+        </li>   
+        <!-- Adicione os demais produtos com a mesma estrutura -->
+      </ul>
     </section>
   </main>
 
   <footer class="footer">
-    <div class="footer-columns">
+    <ul class="footer-titles">
+      <li>Institucional</li>
+      <li>Ajuda</li>
+      <li>Contatos</li>
+    </ul>
+    <div class="footer-content">
       <ul>
-        <li class="footer-title">NOSSOS PRODUTOS</li>
-        <li>Mouses</li>
-        <li>Headsets</li>
-        <li>Cadeiras gamers</li>
-        <li>Teclados</li>
-        <li>Monitores</li>
-      </ul>
-      <ul>
-        <li class="footer-title">INSTITUCIONAL</li>
         <li>Sobre nós</li>
         <li>Fale Conosco</li>
         <li>Políticas de envio</li>
         <li>Política de privacidade</li>
       </ul>
       <ul>
-        <li class="footer-title">AJUDA</li>
         <li>Como comprar</li>
         <li>Minha conta</li>
         <li>Meus pedidos</li>
         <li>Meus endereços</li>
       </ul>
       <ul>
-        <li class="footer-title">CONTATOS</li>
-        <li>📧 Techstorm@gmail.com</li>
-        <li>📞 (11) 95423-67-95</li>
-        <li>📍 Rua Cristiano Olsen, nº 1902</li>
+        <li>contato@techstorm.com</li>
+        <li>(11) 91234-5678</li>
       </ul>
     </div>
-    <div class="footer-bottom">
-      <p>Copyright © Todos os direitos reservados</p>
-    </div>
   </footer>
-  
 </body>
 
 </html>
