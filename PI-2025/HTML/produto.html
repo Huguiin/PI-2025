@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mouse Gamer Anubis - TechStorm</title>
+  <link rel="stylesheet" href="../CSS/reset.css">
+  <link rel="stylesheet" href="../CSS/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet"> <!-- Fonte principal -->
+  <script defer src="../JS/produto.js"></script> <!-- Link the JavaScript file -->
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="main-header">
+    <div class="header-container">
+      <div class="logo-container">
+        <img src="../imagens/image 1.png" alt="TECHSTORM Logo" class="logo">
+      </div>
+
+      <div class="buscar-container" >
+        <input type="text" placeholder="Pesquisar produtos" class="busca-bar">
+        <button class="busca-btn">
+          <i class="fas fa-search" ></i>
+        </button>
+      </div>
+
+      <div class="icons-container">
+        <button class="carrinho-btn" class="cart-icon" id="cart-icon">
+          <i class="fas fa-shopping-cart"></i>
+        </button>
+        <button class="login-btn" ><a href="../HTML/login.html">LOGIN</a></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <section class="product-container">
+      <!-- Product Image Section -->
+      <div class="image-section">
+        <img src="../imagens/produtos/MOUSE.png" alt="Mouse Gamer Anubis" class="product-image">
+        <div class="color-dots">
+          <span class="dot purple"></span>
+          <span class="dot white"></span>
+        </div>
+      </div>
+
+      <!-- Product Info Section -->
+      <div class="info-section">
+        <h2 class="product-title">Mouse Gamer Anubis</h2>
+        <p class="description">
+          Recuse por você este item de design ousado e tecnologia de última geração,
+          perfeitamente criado e feito à mão e toca livre de limitações sociais.
+        </p>
+        <p class="price">R$114,99</p>
+        <div class="actions">
+          <button class="btn buy-btn">COMPRAR</button>
+          <button class="btn add-btn">ADICIONAR AO CARRINHO</button>
+          <div class="quantity-selector">
+            <button class="quantity-btn" id="decrease-btn">-</button>
+            <span class="quantity" id="quantity">0</span> <!-- Add an id to the span -->
+            <button class="quantity-btn" id="increase-btn">+</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Produtos Relacionados (Lista Padrão) -->
+    <section class="carousel-section">
+      <h2 class="carousel-title">Produtos Relacionados</h2>
+      <div class="carousel-wrapper">
+        <button class="carousel-btn prev-btn" id="prevBtn">&#10094;</button>
+        <div class="carousel-track-container">
+          <div class="carousel-track" id="carouselTrack">
+            <!-- Os 8 cards existentes -->
+            <div class="card">
+              <img src="../imagens/produtos/CADEIRA.png" alt="Cadeira Gamer">
+              <p><strong>Cadeira Gamer Reclinável</strong></p>
+              <p class="preco">R$899,99</p>
+              <div class="card-buttons">
+                <button class="btn-detalhes">Detalhes</button>
+                <button class="btn-comprar">Comprar</button>
+              </div>
+            </div>
+            <div class="card">
+              <img src="../imagens/produtos/MOUSE.png" alt="Mouse Gamer">
+              <p><strong>Mouse Gamer Anúbis 7 Botões LED RGB</strong></p>
+              <p class="preco">R$114,99</p>
+              <div class="card-buttons">
+                <button class="btn-detalhes">Detalhes</button>
+                <button class="btn-comprar">Comprar</button>
+              </div>
+            </div>
+            <div class="card">
+              <img src="../imagens/produtos/MONITOR.png" alt="Monitor Gamer">
+              <p><strong>Monitor Gamer 144Hz</strong></p>
+              <p class="preco">R$1.299,99</p>
+              <div class="card-buttons">
+                <button class="btn-detalhes">Detalhes</button>
+                <button class="btn-comprar">Comprar</button>
+              </div>
+            </div>
+            <div class="card">
+              <img src="../imagens/produtos/KEYCAP.png" alt="Keycap">
+              <p><strong>Keycap Mecânico RGB</strong></p>
+              <p class="preco">R$99,99</p>
+              <div class="card-buttons">
+                <button class="btn-detalhes">Detalhes</button>
+                <button class="btn-comprar">Comprar</button>
+              </div>
+            </div>
+            <div class="card">
+              <img src="../imagens/produtos/PLACA DE VIDEO.png" alt="Placa de Vídeo">
+              <p><strong>Placa de Vídeo RTX 4060</strong></p>
+              <p class="preco">R$2.499,99</p>
+              <div class="card-buttons">
+                <button class="btn-detalhes">Detalhes</button>
+                <button class="btn-comprar">Comprar</button>
+              </div>
+            </div>
+            <div class="card">
+              <img src="../imagens/produtos/SUPORTE.png" alt="Suporte">
+              <p><strong>Suporte para Headset</strong></p>
+              <p class="preco">R$59,99</p>
+              <div class="card-buttons">
+                <button class="btn-detalhes">Detalhes</button>
+                <button class="btn-comprar">Comprar</button>
+              </div>
+            </div>
+            <div class="card">
+              <img src="../imagens/produtos/WEBCAM.png" alt="Webcam">
+              <p><strong>Webcam Full HD</strong></p>
+              <p class="preco">R$199,99</p>
+              <div class="card-buttons">
+                <button class="btn-detalhes">Detalhes</button>
+                <button class="btn-comprar">Comprar</button>
+              </div>
+            </div>
+            <div class="card">
+              <img src="../imagens/produtos/GABINETE.png" alt="Gabinete Gamer">
+              <p><strong>Gabinete Gamer RGB</strong></p>
+              <p class="preco">R$349,99</p>
+              <div class="card-buttons">
+                <button class="btn-detalhes">Detalhes</button>
+                <button class="btn-comprar">Comprar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-btn next-btn" id="nextBtn">&#10095;</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-columns">
+      <ul>
+        <li class="footer-title">NOSSOS PRODUTOS</li>
+        <li>Mouses</li>
+        <li>Headsets</li>
+        <li>Cadeiras gamers</li>
+        <li>Teclados</li>
+        <li>Monitores</li>
+      </ul>
+      <ul>
+        <li class="footer-title">INSTITUCIONAL</li>
+        <li>Sobre nós</li>
+        <li>Fale Conosco</li>
+        <li>Políticas de envio</li>
+        <li>Política de privacidade</li>
+      </ul>
+      <ul>
+        <li class="footer-title">AJUDA</li>
+        <li>Como comprar</li>
+        <li>Minha conta</li>
+        <li>Meus pedidos</li>
+        <li>Meus endereços</li>
+      </ul>
+      <ul>
+        <li class="footer-title">CONTATOS</li>
+        <li>📧 Techstorm@gmail.com</li>
+        <li>📞 (11) 95423-67-95</li>
+        <li>📍 Rua Cristiano Olsen, nº 1902</li>
+      </ul>
+    </div>
+    <div class="footer-bottom">
+      <p>Copyright © Todos os direitos reservados</p>
+    </div>
+  </footer>
+  
+</body>
+</html>
